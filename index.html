@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <h2
+      style="
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      "
+    >
+    Expenses Calculator <hr>
+    </h2><br>
+    <div class="space">
+      <div id="cont1">
+        <div id="addbug">
+          <form>
+            <label for="">Your Budget</label><br>
+            <input type="number" name="" id="budget"  placeholder="Enter the budget"><br>
+            <button
+              type="button"
+              class="btn btn-success"
+              id="addb"
+              style="margin-top: 10px; margin-bottom: 10px;"
+            >
+              Add Budget
+            </button>
+          </form>
+        </div>
+        <div id="updatetable">
+          <table id="init">
+            <tr>
+              <td>Budget</td>
+              <td>Expense</td>
+              <td>Balance</td>
+            </tr>
+            <tr id="abc">
+              <td>₹ <span id="upbug">0</span></td>
+              <td>₹ <span id="upexp">0</span></td>
+              <td>₹ <span id="upbal">0</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="cont2">
+        <div id="addexp">
+          <form>
+            <label for=""> Detail</label><br>
+            <input type="text" name="" id="expinfo" placeholder="enter the details"/><br>
+            <label for=""> Amount</label><br>
+            <input type="number" name="" id="expamt" placeholder="amount spent"/><br>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="adde"
+              style="margin-top: 10px; margin-bottom: 10px;"
+            >
+              Add Expense
+            </button><br>
+          </form>
+        </div>
+        <div id="result">
+          <table id="netres">
+            <tr>
+              <td>Details</td>
+              <td>Amount</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <button id="clear">Clear All</button>
+    <button id="logout-btn">Logout</button>
+  </body>
+  <script src="main.js"></script>
+</html>

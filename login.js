@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       if (foundUser) {
         // Redirect to expenses calculator page
-        window.location.href = 'index.html';
+        window.location.href = 'money.html';
       } else {
         errorMessage.textContent = 'Invalid username or password';
       }
